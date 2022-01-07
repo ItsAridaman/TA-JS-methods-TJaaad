@@ -4,13 +4,28 @@
   Create a function named addTwo which accepts a number, adds 2 to the number and return the new value.
 */
 
+function addTwo(num)
+{
+return num+2;
+}
+
+
 /*
   Create a function named addThree which accepts a number, adds 3 to the number and return the new value.
 */
+function addTwo(num)
+{
+return num+3;
+}
+
 
 /*
   Create a function named addFive which accepts a number, adds 5 to the number and return the new value.
 */
+function addTwo(num)
+{
+return num+5;
+}
 
 /*
   Create a function named addTwoToArray which accepts:
@@ -18,6 +33,22 @@
     - Returns a new array where 2 is added to each element
     - While doing so use the funciton addTwo
 */
+
+function addTwoToArray(arr,fn)
+{
+  var newArray=[];
+
+for (var array of arr)
+{
+  return fn(array);
+  var m1=fn(array);
+  newArray.push(m1);
+}
+console.log(newArray);
+
+}
+addTwoToArray([3,6,1,6,9],addTwo);
+
 
 /*
   Create a function named addThreeToArray which accepts:
