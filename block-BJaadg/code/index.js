@@ -8,6 +8,10 @@ let to = 'Arya Stark';
 1. Find the index of the first 'is' in the variable quote. And store it in a new variable named indexOfIs
 */
 
+let indexOfIs=quote.indexOf("is");
+console.log(indexOfIs);
+
+
 /*
 2. Find the character at the index indexOfIs (Problem 1) in quote.
 */
