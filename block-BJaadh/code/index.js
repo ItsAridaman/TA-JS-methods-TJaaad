@@ -7,20 +7,47 @@ NOTE:
 While using methods like push, pop, sort etc it mutates the original array.
 
 Clone the array before using sort method: [...arr]
-
 */
+let numbers1=[...numbers];
+console.log(numbers1);
+let strings1=[...strings];
+console.log(strings1);
+
 
 // - Find the index of `101` in numbers
 
+console.log(numbers1.indexOf(101));
+
+
 // - Find the last index of `9` in numbers
+
+console.log(numbers1.lastIndexOf(9));
+
 
 // - Convert value of strings array into a sentance like "This is a collection of words"
 
+console.log(strings1.join(" "));
+
+
 // - Add two new words in the strings array "called" and "sentance"
+
+strings1.push("called");
+strings1.push("sentance");
+console.log(strings1);
+
+
 
 // - Again convert the updated array (strings) into sentance like "This is a collection of words called sentance"
 
+console.log(strings1.join(" "));
+
+
+
 // - Remove the first word in the array (strings)
+
+console.log(strings1.shift());
+console.log(strings1);
+
 
 // - Find all the words that contain 'is' use string method 'includes'
 
