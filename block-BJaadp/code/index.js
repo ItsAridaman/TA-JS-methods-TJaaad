@@ -15,19 +15,52 @@ let persons = [
 
 // NOTE: Use reduce method whereever you can to solve this exercise:
 
+
+
+
 // Find the average grade
+
+let a=persons.map((person)=>person.grade);
+let b=a.reduce((acc, cv)=>
+{
+acc=acc+cv;
+return acc;
+}
+)
+let average=b/persons.length;
+console.log(average);
+
 
 // Find the average grade of male
 
+console.log(persons.filter((person)=>person.sex==="M").map((person)=>person.grade).reduce((acc, cv)=>
+{
+acc=acc+cv;
+return acc;
+}
+)/persons.filter((person)=>person.sex==="M").length);
+
 // Find the average grade of female
+console.log(persons.filter((person)=>person.sex==="F").map((person)=>person.grade).reduce((acc, cv)=>
+{
+acc=acc+cv;
+return acc;
+}
+)/persons.filter((person)=>person.sex==="F").length);
+
 
 // Find the highest grade
+
+console.log(a.sort((a,b)=>a-b));
+console.log(a[a.length-1]);
 
 // Find the highest grade in male
 
 // Find the highest grade in female
 
 // Find the highest grade for people whose name starts with 'J' or 'P'
+
+console.log(persons.filter((person)=>person.name.startsWith("J") || person.name.startsWith("P")).map((person)=>person.grade).sort((a,b)=>a-b));
 
 const fruitBasket = [
   'banana',
@@ -90,16 +123,16 @@ Create these functions which accepts a number value and returns a number value:
   - `half` converts the value to half and return the integer value not decimal (use Math.round(21.5) => 21)
 */
 
-let pipeline = [
-  increment,
-  double,
-  decrement,
-  decrement,
-  double,
-  triple,
-  half,
-  increment,
-];
+// let pipeline = [
+//   increment,
+//   double,
+//   decrement,
+//   decrement,
+//   double,
+//   triple,
+//   half,
+//   increment
+// ];
 
 /*
 Using the pipeline variable that contains the collection of functions, taking the initial value 3 find the output.
@@ -115,18 +148,18 @@ EXAMPLE:
   ...
 */
 
-let pipeline2 = [
-  increment,
-  half,
-  double,
-  decrement,
-  decrement,
-  triple,
-  double,
-  triple,
-  half,
-  increment,
-  triple,
-];
+// let pipeline2 = [
+//   increment,
+//   half,
+//   double,
+//   decrement,
+//   decrement,
+//   triple,
+//   double,
+//   triple,
+//   half,
+//   increment,
+//   triple
+// ];
 
 // Find the output using pipeline2 the initial value if 8
