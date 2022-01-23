@@ -11,10 +11,30 @@ function peopleByHouses() {
 
 function everyone() {
   // your code goes here
+  return got.houses.reduce((acc, house)=>
+  {
+    acc=acc.concat(house.people.map((ppl)=>ppl.name));
+    return acc;
+  }
+  ,[]);
 }
 
 function nameWithS() {
   // your code goes here
+      let a=everyone();
+
+return got.houses.reduce((acc, house)=>
+  {
+    acc=acc.filter((value)=>
+    {
+      value.split(' ')[0].startswith("S");
+    }
+    )
+    return acc;
+  }
+  ,a);
+
+
 }
 
 function nameWithA() {
