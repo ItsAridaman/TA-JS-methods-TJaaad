@@ -3,6 +3,7 @@
 function countAllPeople() {
   // your code goes here
 }
+// ....
 
 function peopleByHouses() {
   // your code goes here
